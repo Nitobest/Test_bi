@@ -1,0 +1,9 @@
+For this stage, it is necessary to construct the OLAP starting from the transactional database called bi_test_last (located within the 'MYSQL ARCHIVES' folder).
+Initially, there is a transactional schema (.sql) in which the ETL process will be carried out using the Pentaho Data Integration tool, feeding the analytics schema. In the first step of developing the OLAP cube, the tables of dimensions and facts are identified, highlighting the relationships and attributes named in the guide for this test.
+In summary, 4 dimensions are identified for this schema:
+
+- dim_project_policy
+- dim_location
+- dim_global_units
+- dim_rep_ind_geographic_scopes
+Once identified, emphasizing the relationships these dimensions have, the ETL process is carried out using the Pentaho Data Integration application.

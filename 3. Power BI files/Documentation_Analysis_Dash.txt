@@ -1,0 +1,8 @@
+- As a first step in understanding the business, 4 dimensions are identified, which are Country, Year, NextUser, and Project.
+
+- To obtain the classification of the Innovation score, the table containing this parameter is examined, 
+identifying duplicates of the same records with a different score (it is necessary to ask the expert about the reason for this duplication). 
+However, for practical purposes of the exercise, for rows that have different scores associated with the same project_id, the average of these scores is taken to normalize values. 
+Following this, we can build the project dimension and calculate the score grouped by id_YEAR, as the same project can have a different score for each year.
+
+- ID_YEAR is then identified as the primary key (PK). With this, we can cross-reference the fact table with the countries and next_users tables and bring in that information for potential business inquiries.
